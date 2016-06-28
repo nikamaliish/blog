@@ -1,0 +1,1 @@
+<?php if (isset($error)) echo "<b style='color: red;'>$error</b>"?><ul>    <li>        <b><a href="?a=new&c=post">Новая статья</a></b>    </li>    <?php foreach ($articles as $article): ?>        <li>            <a href="?a=edit&c=post&id=<?= $article['id'] ?>">                <?= $article['title'] ?>            </a>        </li>    <?php endforeach; ?></ul>
